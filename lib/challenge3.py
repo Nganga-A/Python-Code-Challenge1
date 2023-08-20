@@ -14,6 +14,15 @@ def solve(s):
 
     return max_value
 
+# Get user input
+input_string = input("Enter a string: ")
+
+# Call the function with user input
+result = solve(input_string)
+
+# Display the output
+print("Strength of the string:", result)
+
 # Test cases
-print(solve("zodiacs"))   # Output: 26
-print(solve("strength"))  # Output: 57
+# print(solve("zodiacs"))   # Output: 26
+# print(solve("strength"))  # Output: 57
