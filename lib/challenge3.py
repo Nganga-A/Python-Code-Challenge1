@@ -1,9 +1,9 @@
-def solve(s):
+def strength_checker(str):
     consonants = "bcdfghjklmnpqrstvwxyz"
     max_value = 0
     current_value = 0
 
-    for char in s:
+    for char in str:
         if char in consonants:
             current_value += ((ord(char) - ord('a')) + 1)  
             #calculates the offset between the Unicode code points of the given character 
@@ -18,11 +18,9 @@ def solve(s):
 input_string = input("Enter a string: ")
 
 # Call the function with user input
-result = solve(input_string)
+result = strength_checker(input_string)
 
 # Display the output
 print("Strength of the string:", result)
 
-# Test cases
-# print(solve("zodiacs"))   # Output: 26
-# print(solve("strength"))  # Output: 57
+
